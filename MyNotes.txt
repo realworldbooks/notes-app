@@ -1,0 +1,25 @@
+Changes/Additions made
+
+Front End:
+App.js (react)
+- Added Routes in App.js for /notes backend test
+
+pages:
+NotesDemo.js
+-added functionality to fetch data from the backend and add it to a table
+-CRUD functionality automatically updates table based on actions
+
+tests: 
+NotesDemo.Test.js
+-added front end unit tests in jest
+
+Back End:
+app.js (node)
+- added route for notes 
+- added cors to prevent CORS issues
+
+routes:
+-added notesRoutes.js to create the various CRUD functionalities as requested in the assessment
+
+tests:
+-added notesRoutes.test.js to create backend unit tests for the various CRUD functions

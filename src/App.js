@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
 import NavBar from "./components/navbar/Navbar";
 import Developers from "./pages/Developers";
@@ -8,19 +8,28 @@ import Loading from "./pages/Header";
 import Partners from "./pages/Partners";
 import Properties from "./pages/Properties";
 import Subscribe from "./pages/Subscribe";
+import NotesDemo from "./pages/NotesDemo";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <NavBar />
-        <Loading />
-        <Partners />
-        <Properties />
-        <AboutUs />
-        <Developers />
-        <Join />
-        <Subscribe />
+        <Routes>
+          <Route path="/notes" element={<NotesDemo/>} />
+          <Route path="/" element={
+            <>
+            <Loading />
+            <Partners />
+            <Properties />
+            <AboutUs />
+            <Developers />
+            <Join />
+            <Subscribe />
+            </>
+          } />
+        </Routes>
+        
         <Footer />
       </BrowserRouter>
     </>

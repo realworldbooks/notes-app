@@ -21,6 +21,7 @@ function NavBar() {
               About Us
             </Nav.Link>
             <Nav.Link href="#action3">Developers</Nav.Link>
+            <Nav.Link href="/notes">Notes Demo</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <div className="d-flex align-items-center order">

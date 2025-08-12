@@ -1,0 +1,23 @@
+# Node Modules
+node_modules/
+
+# Build/Output Directories
+dist/
+build/
+out/
+.next/
+
+# Log Files
+*.log
+
+# Cache Files
+.cache/
+.parcel-cache/
+
+# Environment Variables
+.env
+.env.local
+
+# VS Code Specific
+.vscode/
+*.code-workspace
